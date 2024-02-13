@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="left">
+            <div class="home bg-gray">
+                <h1 class="logo"><a href="/">Sangeet <i class="fa-solid fa-music"></i></a></h1>
+                <ul class="navbar">
+                    <li class="nav-item"><a href="/">🏠&nbsp; Home</a></li>
+                    <li class="nav-item"><a href="/">🔍&nbsp; Search</a></li>
+                </ul>
+            </div>
+
+            <div class="library bg-gray">
+                <div class="library-heading">
+                    <h2 class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" color="white" width="36" height="36" viewBox="0 0 24 24"
+                            id="music-library">
+                            <path
+                                d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 5h-2v5.37c0 1.27-.9 2.44-2.16 2.6-1.69.23-3.11-1.25-2.8-2.95.2-1.1 1.18-1.95 2.3-2.02.63-.04 1.2.16 1.66.51V6c0-.55.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1zM3 6c-.55 0-1 .45-1 1v13c0 1.1.9 2 2 2h13c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1-.45-1-1V7c0-.55-.45-1-1-1z">
+                            </path>
+                        </svg>Your Library
+                    </h2>
+
+
+                    <ul class="songs-list"></ul>
+                </div>
+
+                <div class="footer flex">
+                    <a href="/" class="footer-item">Legal</a>
+                    <a href="/" class="footer-item">Only Fans</a>
+                    <a href="/" class="footer-item">Fansly</a>
+                    <a href="/" class="footer-item">BBC</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <header class="header flex bg-gray">
+                <div class="left-header flex">
+                    <button class="btn hamburger"><i class="fa-solid fa-bars"></i></button>
+                    <button class="btn arrow-btn"><i class="fa-solid fa-angle-left"></i></i></button>
+                    <button class="btn arrow-btn"><i class="fa-solid fa-angle-right"></i></i></button>
+                </div>
+
+                <div class="right-header flex">
+                    <button class="btn login-btn">Login</button>
+                    <button class="btn login-btn">Sign up</button>
+                </div>
+
+            </header>
+
+            <div class="playlist">
+                <h1>Sangeet Playlist</h1>
+
+                <div class="card-container">
+
+       
+
+
+
+                </div>
+            </div>
+
+
+            <div class="play-bar">
+                <div class="controls flex">
+                    <h3 class="playbar-song-name"></h3>
+                    <div class="control-btns flex">
+                        <button id="previous"><i class="fa-solid fa-angle-left"></i></button>
+                        <button id="play-pause"><i class="fa-solid fa-play"></i></button>
+                        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                    <div class="time-vol flex">
+                        <span class="time">00:00/00:00</span>
+                        <div class="volume-div flex">
+                            <div class="volume-icon btn"><i class="fa-solid fa-volume-high"></i></div>
+                            <input type="range" name="volume" id="volume">
+                        </div>
+                    </div>
+                </div>
+
+                <input type="range" name="seek-bar" id="seek-bar" value="0" min="1" max="100" step="0.01">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
